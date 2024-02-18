@@ -1,0 +1,64 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "cargo-espflash@latest": {
+      "last_modified": "2024-01-27T14:55:31Z",
+      "resolved": "github:NixOS/nixpkgs/160b762eda6d139ac10ae081f8f78d640dd523eb#cargo-espflash",
+      "source": "devbox-search",
+      "version": "2.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/pf39k06vv0hi6nz0z12xz7mrpdkw4qcw-cargo-espflash-2.1.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/9kxqh1h8njrq4ig21rb0gnp76dmjc3qj-cargo-espflash-2.1.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/p3sv3byqyq2vv40csi22qc83g2v22i8n-cargo-espflash-2.1.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/282bw9y6fpyxssisdbngshbc96fd5abr-cargo-espflash-2.1.0"
+        }
+      }
+    },
+    "darwin.apple_sdk.frameworks.Security": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#darwin.apple_sdk.frameworks.Security",
+      "source": "nixpkg"
+    },
+    "libiconv@latest": {
+      "last_modified": "2024-01-27T14:55:31Z",
+      "resolved": "github:NixOS/nixpkgs/160b762eda6d139ac10ae081f8f78d640dd523eb#libiconv",
+      "source": "devbox-search",
+      "version": "2.38",
+      "systems": {
+        "aarch64-linux": {
+          "store_path": "/nix/store/vy1d86v4gbzzbjs6c106wv979f8ibv2y-glibc-iconv-2.38"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/cbzzpbnwl9hw5v7jrglq60y1wjjngd8s-glibc-iconv-2.38"
+        }
+      }
+    },
+    "rustup@latest": {
+      "last_modified": "2024-01-27T14:55:31Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/160b762eda6d139ac10ae081f8f78d640dd523eb#rustup",
+      "source": "devbox-search",
+      "version": "1.26.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/jz227pv1bxxrrzks4rpcqw03brkxc532-rustup-1.26.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/9ysiran9g09w2p8wf66g7r1q456n2saz-rustup-1.26.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/gpgh2a5lq30f62bf2af76rf31v7n0vx4-rustup-1.26.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/9y1pfqglsv21187z6n70ibl4kz1nlnrc-rustup-1.26.0"
+        }
+      }
+    }
+  }
+}
