@@ -618,34 +618,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "esponja-mqtt"
-version = "0.1.0"
-dependencies = [
- "embedded-io",
- "embedded-svc",
- "esp-backtrace",
- "esp-hal-smartled",
- "esp-println",
- "esp-wifi",
- "esp32c6-hal",
- "heapless 0.8.0",
- "mqttrust",
- "smart-leds",
- "smoltcp",
-]
-
-[[package]]
-name = "esponja-rgb"
-version = "0.1.0"
-dependencies = [
- "esp-backtrace",
- "esp-hal-smartled",
- "esp-println",
- "esp32c6-hal",
- "smart-leds",
-]
-
-[[package]]
 name = "flate2"
 version = "1.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -838,15 +810,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9d811f3e15f28568be3407c8e7fdb6514c1cda3cb30683f15b6a1a1dc4ea14a7"
 dependencies = [
  "adler",
-]
-
-[[package]]
-name = "mqttrust"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae32f7b780d20b0fc574bba0ca71b33838bb264d7a48b098cd18e3327c30edde"
-dependencies = [
- "heapless 0.7.17",
 ]
 
 [[package]]

@@ -17,12 +17,11 @@ use esp_println::println;
 use smart_leds::{brightness, gamma, hsv::{hsv2rgb, Hsv}, RGB, RGB8, SmartLedsWrite};
 
 
-static BRIGHTNESS: u8 = 10;
 #[entry]
 fn main() -> ! {
     let peripherals = peripherals::Peripherals::take();
     let system = peripherals.SYSTEM.split();
-    let clocks = ClockControl::boot_defaults(system.clock_control).freeze();
+    let clocks = ClockControl::max(system.clock_control).freeze();
 
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
 
@@ -55,10 +54,12 @@ fn main() -> ! {
             // When sending to the LED, we do a gamma correction first (see smart_leds
             // documentation for details) and then limit the brightness to 10 out of 255 so
             // that the output it's not too bright.
-            led.write(brightness(gamma(data.iter().cloned()), 10))
+            led.write(brightness(gamma(data.iter().cloned()), 1))
                 .unwrap();
             delay.delay_ms(20u8);
             println!("{:?}", data);
+
+            // panic!("This is a panic");
         }
     }
 }

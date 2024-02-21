@@ -1,0 +1,16 @@
+[package]
+name = "esponja-rgb"
+version = "0.1.0"
+authors = ["David Gomez-Urquiza <david.gurquiza@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[profile.release]
+debug = true
+
+[dependencies]
+hal           = { package = "esp32c6-hal", version = "0.8.0" }
+esp-backtrace = { version = "0.11.0", features = ["esp32c6", "panic-handler", "exception-handler", "println"] }
+esp-println = { version = "0.9.0", features = ["esp32c6", "jtag-serial"], default-features = false }
+esp-hal-smartled = { version = "0.8.0", features = ["esp32c6"] }
+smart-leds = "0.4.0"
